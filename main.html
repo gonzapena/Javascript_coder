@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript</title>
+  <meta charset="UTF-8">
+  <title>Calculadora de propina</title>
 </head>
-
-<body>
-
-    <h1>Curso de JavaScript</h1>
-
-    <script src="code.js"></script>
-</body>
-
+    <body>
+        <h1>Calculadora de propina</h1>
+        <form>
+            <label for="amount">Monto total:</label>
+            <input type="number" id="amount">
+            <br>
+            <label for="people">Número de personas:</label>
+            <input type="number" id="people">
+            <br>
+            <label for="tip">Porcentaje de propina:</label>
+            <input type="number" id="tip">
+            <br>
+            <button type="button" id="calculate-btn">Calcular</button>
+        </form>
+        <br>
+        <p id="total"></p>
+        <p id="perPerson"></p>
+        <p id="billDetails"></p>
+        <div id="workshop-results"></div>
+        <script src="code.js"></script>    
+    </body>
 </html>
+
