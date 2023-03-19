@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function() {
   let table_tips = JSON.parse(localStorage.getItem('table_tips')) || []; // Obtenemos la tabla de propinas de localStorage o la inicializamos como un array vacío si no existe
 
@@ -83,15 +82,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
   class Table {
     constructor(amount, people, tip) {
-      this.amount = amount;
-      this.n_people_pay = people;
-      this.tip = tip;
-
-  fetch ('http://localhost:3000/api/calculateTip', {
-            method: 'POST',
-            body: formData
-          })
-
-    let table_tips = JSON.parse(localStorage.getItem('table_tips')) || []; // Obtenemos la tabla de propinas de localStorage o la inicializamos como un array vacío si no existe
-  
-  }}})
+      this.amount
+    }}})
