@@ -3,27 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <title>Calculadora de propina</title>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <!-- Enlaces a los archivos de Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </head>
-    <body>
-        <h1>Calculadora de propina</h1>
-        <form>
-            <label for="amount">Monto total:</label>
-            <input type="number" id="amount">
-            <br>
-            <label for="people">Número de personas:</label>
-            <input type="number" id="people">
-            <br>
-            <label for="tip">Porcentaje de propina:</label>
-            <input type="number" id="tip">
-            <br>
-            <button type="button" id="calculate-btn">Calcular</button>
-        </form>
-        <br>
-        <p id="total"></p>
-        <p id="perPerson"></p>
-        <p id="billDetails"></p>
-        <div id="workshop-results"></div>
-        <script src="code.js"></script>    
-    </body>
+<body>
+    <div class="container mt-5">
+      <h1 class="text-center mb-4">Calculadora de propina</h1>
+      <form class="row g-3">
+        <div class="col-md-4">
+          <label for="amount" class="form-label">Monto total:</label>
+          <input type="number" id="amount" class="form-control">
+        </div>
+        <div class="col-md-4">
+          <label for="people" class="form-label">Número de personas:</label>
+          <input type="number" id="people" class="form-control">
+        </div>
+        <div class="col-md-4">
+          <label for="tip" class="form-label">Porcentaje de propina:</label>
+          <input type="number" id="tip" class="form-control">
+        </div>
+        <div class="col-md-12 mt-3">
+          <button type="button" id="calculate-btn" class="btn btn-primary">Calcular</button>
+        </div>
+      </form>
+      <div class="row mt-5">
+        <div class="col-md-4">
+          <p id="total" class="border p-2"></p>
+        </div>
+        <div class="col-md-4">
+          <p id="perPerson" class="border p-2"></p>
+        </div>
+        <div class="col-md-4">
+          <p id="billDetails" class="border p-2"></p>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-12">
+          <div id="workshop-results"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Agregar SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  
+    <!-- Agregar Luxon -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/luxon/2.0.1/luxon.min.js"></script>
+    <script src="code.js"></script>    
+  </body>  
 </html>
-
